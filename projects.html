@@ -1,32 +1,69 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #e6f4ea; color: #1b4332; margin: 0; }
-    header, footer { background: #2d6a4f; color: white; text-align: center; padding: 1em; }
-    nav { background: #40916c; text-align: center; }
-    nav a { color: white; text-decoration: none; padding: 1em; display: inline-block; }
-    nav a:hover { background: #1b4332; }
-    section { max-width: 800px; margin: auto; padding: 2em; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #e6f4ea;
+      color: #1b4332;
+      margin: 0;
+    }
+    header, footer {
+      background: #2d6a4f;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    nav {
+      background: #40916c;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1em;
+      display: inline-block;
+    }
+    nav a:hover {
+      background: #1b4332;
+    }
+    .project-section {
+      background: #d8f3dc;
+      margin: 2em auto;
+      padding: 1.5em;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .project-section h2 {
+      margin-top: 0;
+      color: #2d6a4f;
+    }
   </style>
 </head>
 <body>
   <header><h1>Projects</h1></header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="resume.html">Resume</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <section>
-    <ul>
-      <li><strong>Project One</strong> – A web app that does something cool.</li>
-      <li><strong>Project Two</strong> – Another awesome project.</li>
-    </ul>
-  </section>
-  <footer>&copy; 2025 Your Name</footer>
+
+  <div class="project-section">
+    <h2>Real Estate Price Prediction And Investment Analysis</h2>
+    <p>Performed investment analysis to pinpoint profitable opportunities in the housing market.</p>
+  </div>
+
+  <div class="project-section">
+    <h2>Predictive Modeling of NBA Game Scores Using Machine Learning Techniques</h2>
+    <p>It begins with web scraping NBA box score data, followed by data preprocessing and feature engineering. The cleaned data is then used to train a predictive model that forecasts game results based on historical performance metrics. .</p>
+  </div>
+
+  <footer>&copy; 2025 Ibraheem Qureshi</footer>
 </body>
 </html>
