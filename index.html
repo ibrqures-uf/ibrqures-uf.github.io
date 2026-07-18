@@ -1,788 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ibraheem Qureshi - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/head.jpeg" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibraheem Qureshi - Software Engineer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/head.jpeg" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Ibraheem Qureshi</h1>
-
-          <p class="title">Aspiring Software Engineer</p>
+    <!-- Floating Nav -->
+    <nav class="dock">
+        <button class="dock-item" data-section="home"><ion-icon name="home-outline"></ion-icon></button>
+        <button class="dock-item" data-section="projects"><ion-icon name="briefcase-outline"></ion-icon></button>
+        <a href="mailto:ibmqures17@gmail.com" class="dock-item"><ion-icon name="mail-outline"></ion-icon></a>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round">
+                    <ion-icon name="sunny" class="icon-sun"></ion-icon>
+                    <ion-icon name="moon" class="icon-moon"></ion-icon>
+                </div>
+            </label>
         </div>
+    </nav>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-      <br>
-
-
-      <ul class="social-list">
-
-        <li class="social-item">
-          <a alt = "LIN" href="https://www.linkedin.com/in/ibraheem-qureshi-709476226/" target="_blank" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-
-        <li class="social-item">
-          <a alt = "GH" href="https://github.com/ibrqures-uf?tab=repositories" target="_blank" class="social-link">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </li>
-
-        <!-- <li class="social-item">
-          <a alt = "TWR" href="#" class="social-link">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li> -->
-
-      </ul>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+    <main class="container">
+        <!-- Hero Section -->
+        <header class="hero" id="home">
+            <figure class="hero-avatar">
+                <img src="./assets/images/head.jpeg" alt="Ibraheem Qureshi">
+            </figure>
+            <div class="hero-text">
+                <h1 class="hero-title">Ibraheem<br>Qureshi.</h1>
+                <p class="hero-subtitle">Software Engineer. Problem Solver.</p>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:ibrqures17@gmail.com" class="contact-link">ibrqures17@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="+1 832 547 1568" class="contact-link">+1 832 547 1568</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2000-11-10">Nov 10, 2000</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Mobile, Alabama</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
         </header>
 
-        <section class="about-text">
-          <p>
-            Hi, I’m Ibraheem Qureshi—a Computer Science graduate from the University of Denver and an incoming Master’s student in Computer Science at the University of Florida. I’m passionate about building reliable, user-friendly tools and exploring how technology can solve real-world problems. Over the past few years, I’ve gained hands-on experience in full-stack web development with HTML, CSS, JavaScript, PHP, and SQL, as well as spatial analysis using ArcGIS Pro and PostgreSQL.
-          </p>
-
-          <p>
-            I’ve also built data-driven projects in Python, including tools for real estate analysis and digital forensics, and I’m comfortable working with technologies like Git, Linux, and Docker. I enjoy learning new tools, solving complex problems, and collaborating with others to turn ideas into working solutions.
-          <!-- <p>
-            Beyond web development, I have a creative edge in graphic design, bringing an aesthetic touch to my projects through tools like Photoshop and Illustrator.
-          </p> -->
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Geospatial Analysis and GIS</h4>
-
-                <p class="service-item-text">
-                  My work in geospatial analysis has allowed me to dive deep into GIS technologies like ArcGIS Pro and PostgreSQL. I’m passionate about using spatial data to solve real-world problems, such as analyzing environmental impacts and assessing vulnerabilities in infrastructure.
+        <!-- Bento Grid -->
+        <section class="bento-grid">
+            <!-- About Card -->
+            <div class="bento-card col-span-2" style="align-self: start;">
+                <h2 class="bento-title">About Me</h2>
+                <p class="bento-text">
+                    I’m a Computer Science graduate from the University of Denver and an incoming Master’s student in CS at the University of Florida. 
+                    I’m passionate about building reliable, user-friendly tools and exploring how technology can solve real-world problems. 
+                    My experience spans full-stack web development, Python data-driven projects, and spatial analysis using GIS.
                 </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Full-Stack Web Development</h4>
-
-                <p class="service-item-text">
-                  I focus on building and maintaining complete web applications, working with both front-end technologies like HTML, CSS, and JavaScript, and back-end tools such as PHP and SQL. I enjoy crafting websites that are not only functional but also user-friendly and efficient.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-iot.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data-Driven Projects and Python Programming</h4>
-
-                <p class="service-item-text">
-                  I love working with data to uncover insights and drive decision-making. Through Python, I’ve built projects ranging from real estate price prediction to digital forensics, using data science tools and libraries to solve complex problems and improve workflows.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-graphic.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Collaboration and Problem-Solving in Tech</h4>
-
-                <p class="service-item-text">
-                  I thrive in collaborative environments where I can work alongside others to solve challenging technical problems. I value communication and teamwork, especially when applying Agile methodologies to turn innovative ideas into practical, working solutions.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                <div class="social-links mt-auto">
+                    <a href="https://www.linkedin.com/in/ibraheem-qureshi-709476226/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/ibrqures-uf?tab=repositories" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="mailto:ibmqures17@gmail.com"><ion-icon name="mail"></ion-icon></a>
+                    <a href="./cv_updated.pdf" target="_blank" class="resume-btn">Resume <ion-icon name="download-outline"></ion-icon></a>
+                </div>
             </div>
 
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
+            <!-- Skills Card -->
+            <div class="bento-card">
+                <h2 class="bento-title">Core Skills</h2>
+                <div class="skills-list" style="max-height: 320px; overflow-y: auto; padding-right: 5px;">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Bash</span>
+                    <span class="skill-tag">PHP</span>
+                </div>
             </div>
 
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Worked With</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="">
-                <img src="./assets/images/java.png" alt="client logo" style="width: 50%; height: auto;">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/python3.png" alt="client logo" style="width: 75%; height: auto;">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/javascript.png" alt="client logo" style="width: 75%; height: auto;">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/react.png" alt="client logo" style="width: 85%; height: auto; ">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/express.png" alt="client logo" style="width: 95%; height: auto;">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-            <h2 class="h2 article-title">Resume</h2>
-            <a href="./assets/images/resume.pdf" class="titlebutton" target="_blank">Click here to download full Resume</a>
-            <br>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Florida</h4>
-
-              <span>2025 — 2027</span>
-
-              <p class="timeline-text">
-                Master of Science in Computer Science
-              </p>
-
-          <li class="timeline-item">
-
-
-            <h4 class="h4 timeline-item-title">University of Denver</h4>
-
-            <span> 2020-2024</span>
-
-            <p class="timeline-text">
-              Bachelor of Science in Computer Science
-            </p>
-
-          </li>
-          </li>
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web Developer</h4>
-
-              <span>Oct 2023 – June 2024</span>
-
-              <p class="timeline-text">
-                Fulfill essential web development tasks for the Institute’s website, such as verifying external developer work,
-                fixing code errors, and applying HTML, CSS, and JavaScript expertise to enhance website design.
+            <!-- Experience Card -->
+            <div class="bento-card col-span-2">
+                <h2 class="bento-title">Experience</h2>
                 
-              </p>
-              <p 
-
-                <p class="timeline-text">
-                  Apply knowledge of back-end technologies such as PHP, SQL, and server management to ensure the
-                  web-site’s smooth functioning and security.                  
-                  
-              </p>
-              <p class="timeline-text">
-                Collaborate with a team of third-party web developers to ensure the smooth integration and optimization of
-                the institute’s website, resulting in an increase in online traffic and customer engagement.
-                
-              </p>
-
-
-            </li>
-
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web Development(MERN)</h5>
-                <data value="60">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="40">95%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">DSA(Java)</h5>
-                <data value="70">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Databases (PostgreSQL)</h5>
-                <data value="50">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">ArcGIS Pro</h5>
-                <data value="80">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-
-      <!-- Modal Container -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web Development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web Design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>DSA</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Tools</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web Development</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web Design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>DSA</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Tools</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item active" data-filter-item data-category="web development"
-              data-visit=#
-              data-github="https://github.com/ibrqures-uf/jpeg_to_png_converter"
-              data-description="A simple desktop GUI application built with Python and Tkinter that allows users to import a .jpg or .jpeg image and convert it into a .png file. The interface is clean, modern, and beginner-friendly."
-              data-tech="Python">
-
-              <a href="#" class="open-portfolio-modal">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project1.png" alt="Tools" loading="lazy">
-                </figure>
-                <h3 class="project-title">JPEG to PNG Converter</h3>
-                <p class="project-category">Tools</p>
-              </a>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-        <!-- Portfolio Modal -->
-        <div class="portfolio-modal" data-portfolio-modal>
-          <div class="modal-content2">
-            <span class="close-modal" data-portfolio-modal-close>&times;</span>
-            <img style="border-radius: 10px;" class="imgop1" src="" alt="" data-portfolio-modal-img>
-            <h3 data-portfolio-modal-title>Project Title</h3>
-            <p data-portfolio-modal-text>Project description will go here.</p>
-            <p data-portfolio-modal-tech><strong>Tech Stack:</strong> Will be displayed here.</p> 
-            <div class="modal-links" data-portfolio-modal-links></div>
-          </div>
-        </div>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <!-- BLOG SECTION WITH MODAL -->
-
-
-  
-      <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog (Coming Soon)</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+                <div class="experience-wrapper" style="max-height: 320px; overflow-y: auto; padding-right: 15px;">
+                    <div class="experience-item" style="margin-bottom: 20px;">
+                        <h3 class="bento-subtitle">UFIT Research Computing</h3>
+                        <p class="bento-date">Support & Applications Intern | May 2026 – Present</p>
+                        <ul class="bento-text" style="list-style-type: disc; padding-left: 20px; margin-bottom: 0;">
+                            <li>Engineered internal tools and Python/Linux automation scripts, scaling Tier 1 operations.</li>
+                            <li>Adapted scientific research applications on HiPerGator supercomputer.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item" style="margin-bottom: 20px;">
+                        <h3 class="bento-subtitle">University of Florida, IFAS</h3>
+                        <p class="bento-date">Web Application Developer | Jul 2025 – Present</p>
+                        <ul class="bento-text" style="list-style-type: disc; padding-left: 20px; margin-bottom: 0;">
+                            <li>Developed SART disaster response platform using Java JSP/Servlet and SQL Server.</li>
+                            <li>Delivered a 52% page load improvement on high-traffic galleries.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item" style="margin-bottom: 20px;">
+                        <h3 class="bento-subtitle">University of Florida, MALT Lab</h3>
+                        <p class="bento-date">Machine Learning Researcher | Sep 2025 – Jan 2026</p>
+                        <ul class="bento-text" style="list-style-type: disc; padding-left: 20px; margin-bottom: 0;">
+                            <li>Executed benchmarking study of YOLO architectures across 250+ experiments.</li>
+                            <li>Containerized end-to-end ML pipelines with Docker for GPU deployment via Bash.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3 class="bento-subtitle">Marsico Institute</h3>
+                        <p class="bento-date">Web Developer | Oct 2023 – Jun 2024</p>
+                        <ul class="bento-text" style="list-style-type: disc; padding-left: 20px; margin-bottom: 0;">
+                            <li>Rebuilt website content and accessibility with HTML, CSS, JavaScript, PHP, and SQL.</li>
+                            <li>Contributed to a 40% increase in organic traffic and faster page loads.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
+            <!-- Education Card -->
+            <div class="bento-card" style="align-self: start;">
+                <h2 class="bento-title">Education</h2>
+                <div class="edu-item">
+                    <h3 class="bento-subtitle">University of Florida</h3>
+                    <p class="bento-text">M.S. Computer Science (2025 – 2027)</p>
+                </div>
+                <div class="edu-item">
+                    <h3 class="bento-subtitle">University of Denver</h3>
+                    <p class="bento-text">B.S. Computer Science (2020 – 2024)</p>
+                </div>
+            </div>
+            
+            <!-- Contact Quick Card -->
+            <div class="bento-card highlight-card">
+                <h2 class="bento-title text-white">Let's work together.</h2>
+                <p class="bento-text text-white-70">Based in Gainesville, FL.</p>
+                <a href="mailto:ibmqures17@gmail.com" class="action-btn">Get in touch</a>
+            </div>
         </section>
 
-      </article>
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section mt-lg">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="projects-grid">
+                
+                <a href="#" class="project-card">
+                    <div class="project-info" style="padding-top: 35px; padding-bottom: 35px;">
+                        <h3 class="project-title">Clario: AI-Powered Teaching Platform</h3>
+                        <p class="project-category" style="margin-bottom: 10px;">Full-Stack Next.js App</p>
+                        <p class="bento-text">Built an educational platform integrating Google Gemini AI to parse curriculum PDFs and auto-generate lesson plans, cutting prep time from hours to minutes. Uses Prisma and Recharts for instructor dashboards.</p>
+                    </div>
+                </a>
 
-    </div>
+                <a href="#" class="project-card">
+                    <div class="project-info" style="padding-top: 35px; padding-bottom: 35px;">
+                        <h3 class="project-title">Adversarial & Privacy Defenses</h3>
+                        <p class="project-category" style="margin-bottom: 10px;">Machine Learning Research</p>
+                        <p class="bento-text">Implemented defenses against membership inference attacks and adversarial examples (FGSM, PGD) on CIFAR-100 with ResNet-18. Applied differential privacy (DP-SGD) to characterize robustness tradeoff.</p>
+                    </div>
+                </a>
 
-  </main>
+                <a href="https://pdf-remediator.streamlit.app/" target="_blank" class="project-card">
+                    <div class="project-info" style="padding-top: 35px; padding-bottom: 35px;">
+                        <h3 class="project-title">PDF Remediator</h3>
+                        <p class="project-category" style="margin-bottom: 10px;">Streamlit App</p>
+                        <p class="bento-text">An interactive tool to remediate and parse PDF documents for improved accessibility and data extraction workflows.</p>
+                    </div>
+                </a>
 
+                <a href="https://sart-accessibility-scanner.streamlit.app/" target="_blank" class="project-card">
+                    <div class="project-info" style="padding-top: 35px; padding-bottom: 35px;">
+                        <h3 class="project-title">SART Accessibility Scanner</h3>
+                        <p class="project-category" style="margin-bottom: 10px;">Streamlit App</p>
+                        <p class="bento-text">A comprehensive accessibility scanning utility designed to evaluate digital compliance for the SART disaster response platform.</p>
+                    </div>
+                </a>
 
+                <a href="https://github.com/ibrqures-uf/jpeg_to_png_converter" target="_blank" class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/images/project1.png" alt="JPEG to PNG Converter">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">JPEG to PNG Converter</h3>
+                        <p class="project-category">Python GUI Tool</p>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
 
+    </main>
 
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
